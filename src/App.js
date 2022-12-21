@@ -5,8 +5,10 @@ import Welcome from "./components/Welcome";
 function App() {
   return (
     <div className="App">
-      <Greet />
-      <Welcome />
+      <Greet name="Bruce" heroName="batman" />
+      <Greet name="Clark" heroName="superman" />
+      <Greet name="Diana" heroName="wonder woman" />
+      <Welcome name="test" heroName="haha" />
     </div>
   );
 }
