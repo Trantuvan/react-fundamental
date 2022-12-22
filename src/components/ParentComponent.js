@@ -4,10 +4,10 @@ import ChildComponent from "./ChildComponent";
 export default class ParentComponent extends Component {
   state = { parentName: "Parent" };
 
-  greetParent = () => {
+  greetParent = (childName) => {
     const { parentName } = this.state;
 
-    alert(`Hello ${parentName}`);
+    alert(`Hello ${parentName} from ${childName}`);
   };
 
   render() {
