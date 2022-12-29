@@ -3,12 +3,18 @@ import "./App.css";
 // import Welcome from "./components/Welcome";
 // import Message from "./components/Message";
 // import Counter from "./components/Counter";
-import ParentComponent from "./components/ParentComponent";
+// import ParentComponent from "./components/ParentComponent";
+import Form from "./components/Form";
 
 function App() {
+  const handleSubmit = (evt, data) => {
+    evt.preventDefault();
+    alert(JSON.stringify(data));
+  };
   return (
     <div className="App">
-      <ParentComponent />
+      <Form handleSubmit={handleSubmit} />
+      {/* <ParentComponent /> */}
       {/* <Counter /> */}
       {/* <Message /> */}
       {/* <Greet name="Bruce" heroName="batman">
